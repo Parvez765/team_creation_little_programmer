@@ -23,7 +23,7 @@ body {
 .navContainer .navItemContainer {
   position: absolute;
   background: rgb(248, 247, 247);
-  padding: 15px;
+  padding: 10px;
   border-radius: 10px;
 }
 
