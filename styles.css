@@ -27,4 +27,19 @@ body {
   border-radius: 10px;
 }
 
+.createTeamBtn {
+  color: #4C54F8;
+  font-weight: 500;
+  font-size: 20px;
+  border: 2px solid #4C54F8;
+  border-radius: 12px;
+  padding: 24px 32px 24px 32px;
+}
+
+.cardContainer {
+  border: 1px solid #4C54F8;
+  border-radius: 12px;
+  Padding: 40px 32px 40px 32px;
+}
+
 /*# sourceMappingURL=styles.css.map */

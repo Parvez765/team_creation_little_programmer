@@ -10,6 +10,7 @@ body {
 }
 
 $nav-background: #fff9f9;
+$create-btn: #4C54F8;
 
 .navContainer {
   background-color: $nav-background;
@@ -29,5 +30,20 @@ $nav-background: #fff9f9;
     background: rgb(248, 247, 247);
     padding: 10px;
     border-radius: 10px;
+
   }
+}
+
+.createTeamBtn{
+    color: $create-btn;
+    font-weight: 500;
+    font-size: 20px;
+    border: 2px solid $create-btn;
+    border-radius: 12px;
+    padding: 24px 32px 24px 32px;
+}
+.cardContainer{
+    border: 1px solid $create-btn;
+    border-radius: 12px;
+    Padding: 40px 32px 40px 32px;
 }
