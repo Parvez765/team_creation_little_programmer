@@ -1,0 +1,33 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+$nav-background: #fff9f9;
+
+.navContainer {
+  background-color: $nav-background;
+
+  .navListItem li {
+    font-weight: 400;
+  }
+  .hamburgerIcon {
+    position: relative;
+  }
+  .bellIcon {
+    position: relative;
+  }
+ 
+  .navItemContainer {
+    position: absolute;
+    background: rgb(248, 247, 247);
+    padding: 15px;
+    border-radius: 10px;
+  }
+}

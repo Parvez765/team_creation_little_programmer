@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+   <!-- NavBar -->
+   <nav class="navContainer lg:h-[100px]">
+       <div class="container mx-auto">
+           <div class="flex items-center justify-between">
+                <div class="flex items-center h-[100px]">
+                    <figure><img src="./assets/navbar/navlogo.png" alt="Little Programmers NavBar Logo" class="w-[115px]"/></figure>
+                </div>
+                <div class="flex items-center gap-[40px]">
+                    <div class="hidden lg:block">
+                        <ul class="flex navListItem gap-[20px]">
+                            <li>Availability</li>
+                            <li>Integration</li>
+                            <li>Community</li>
+                        </ul>
+                    </div>
+                    <div class="hidden lg:block">
+                        <div class="flex gap-[10px] ">
+                            <figure>
+                                <img src="./assets/navbar/notify.png"  alt="Little Programmers Navbar Bell Icon"/>
+                            </figure>
+                            <figure>
+                                <img src="./assets/navbar/profile.png"  alt="Little Programmers Profile Icon"/>
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+                <!-- Mobile Responsive -->
+                <div class="block lg:hidden">
+                     <figure><img src="./assets/navbar/hamburgerIcon.png" alt="Little Programmers Hamburger Menu Icon" class="w-[30px] hamburgerIcon" id="hamburger"/></figure>
+                     <figure><img src="./assets/navbar/crossMark.png" alt="Little Programmers Cross Mark Icon" class="w-[30px]" id="crossMark"/></figure>
+                        <div class="navItemContainer mt-[20px]" id="navItems">
+                            <div>
+                                <ul class="">
+                                    <li>Availability</li>
+                                    <li>Integration</li>
+                                    <li>Community</li>
+                                </ul>
+                            </div>
+                            <div class="">
+                                <div class="flex mt-[10px] gap-[10px]">
+                                    <figure>
+                                        <img src="./assets/navbar/notify.png"  alt="Little Programmers Navbar Bell Icon" class="bellIcon"/>
+                                    </figure>
+                                    <figure>
+                                        <img src="./assets/navbar/profile.png"  alt="Little Programmers Profile Icon"/>
+                                    </figure>
+                                </div>
+                            </div>
+                        </div>
+                    
+                </div>
+           </div>
+       </div>
+   </nav>
+   <script src="./index.js"></script>
+</body>
+</html>
