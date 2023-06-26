@@ -57,8 +57,8 @@ $border-color : #0A6AF6;
   margin: 60px auto;
   padding: 40px;
   border-radius: 20px;
-  border: 1px solid $border-color;
-  box-shadow: 0 0 15px 8px rgba(10, 106, 246, 0.2);
+  border: 1px solid #A5ECD7;
+  box-shadow: 0 0 15px 10px rgba(10, 106, 246, 0.2);
   background-color: white;
 
   .inputSection{
@@ -100,6 +100,54 @@ $border-color : #0A6AF6;
   }
 }
 
+.categoryContainer{
+  display: block;
+  margin: 60px auto;
+  padding: 40px;
+  border-radius: 20px;
+  border: 1px solid #A5ECD7;
+  box-shadow: 0 0 15px 10px rgba(10, 106, 246, 0.2);
+  background-color: white;
+
+  .inputSection{
+    height: 75px;
+    border-radius: 12px;
+    border: 2px solid $border-color;
+    padding-left: 20px;
+  }
+  .inputSection {
+    outline: none;
+  }
+  .inputSection::placeholder {
+    font-size: 20px;
+    font-weight: 400;
+    color: #000000;
+    line-height: 23.44px;
+    
+  }
+
+  .cancelBtn{
+    width: 220px;
+    height: 55px;
+    border-radius: 34px;
+    border: 2px solid #000000;
+    Padding: 16px 79px 16px 79px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23.44px;
+  }
+  .continueBtn{
+    width: 215px;
+    height: 55px;
+    border-radius: 34px;
+    background-color: $border-color;
+    Padding: 16px 67px 16px 67px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23.44px;
+    color: #fff;
+  }
+}
 
 
 

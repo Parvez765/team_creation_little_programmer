@@ -38,6 +38,22 @@ const opacity = function(){
     createGroup.style.opacity = '0.2';
 }
 
+const removeOpacity = function(){
+    navContainer.style.opacity = '1';
+    teamCreationHead.style.opacity = '1';
+    createGroup.style.display = "none"
+    createTeam.style.display = "block"
+    createGroup.style.opacity = '1';
+}
+
+const showCard = function() {
+    cardContent.forEach(function(card){
+        card.classList.remove("hidden");
+    });
+    modalContainer.classList.add("hidden");
+    removeOpacity();
+}
+
 
 createTeam.addEventListener("click", function(){
    cardContent.forEach(function(card){
@@ -49,4 +65,27 @@ createTeam.addEventListener("click", function(){
    
 })
 
+const continueBtn = document.getElementById("continueBtn")
+const cancelBtn = document.getElementById("cancelBtn")
+
+continueBtn.addEventListener("click", ()=> {
+    console.log("Hello");
+    opacity()
+    categoryContainer.classList.remove("hidden")
+    modalContainer.classList.add("hidden")
+})
+
+cancelBtn.addEventListener("click", showCard);
+
 // Hero Section Functionality Ends Here
+
+// Team Category
+
+const categoryContainer = document.querySelector(".categoryContainer")
+const teamCancelBtn = document.getElementById("teamCancelBtn")
+
+teamCancelBtn.addEventListener('click', function(){
+    categoryContainer.classList.add("hidden")
+    modalContainer.classList.remove("hidden")
+})
+
