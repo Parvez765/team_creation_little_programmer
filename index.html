@@ -1,19 +1,24 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css" />
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet" />
 </head>
+
 <body>
-   <!-- NavBar -->
-   <nav class="navContainer lg:h-[100px]">
-       <div class="container mx-auto">
-           <div class="flex items-center justify-between">
+    <!-- NavBar -->
+    <nav class="navContainer lg:h-[100px]">
+        <div class="container mx-auto">
+            <div class="flex items-center justify-between">
                 <div class="flex items-center h-[100px]">
-                    <figure><img src="./assets/navbar/navlogo.png" alt="Little Programmers NavBar Logo" class="w-[200px] lg:w-[115px]"/></figure>
+                    <figure>
+                        <img src="./assets/navbar/navlogo.png" alt="Little Programmers NavBar Logo"
+                            class="w-[200px] lg:w-[115px]" />
+                    </figure>
                 </div>
                 <div class="flex items-center gap-[40px]">
                     <div class="hidden lg:block">
@@ -24,56 +29,68 @@
                         </ul>
                     </div>
                     <div class="hidden lg:block">
-                        <div class="flex gap-[10px] ">
+                        <div class="flex gap-[10px]">
                             <figure>
-                                <img src="./assets/navbar/notify.png"  alt="Little Programmers Navbar Bell Icon"/>
+                                <img src="./assets/navbar/notify.png" alt="Little Programmers Navbar Bell Icon" />
                             </figure>
                             <figure>
-                                <img src="./assets/navbar/profile.png"  alt="Little Programmers Profile Icon"/>
+                                <img src="./assets/navbar/profile.png" alt="Little Programmers Profile Icon" />
                             </figure>
                         </div>
                     </div>
                 </div>
                 <!-- Mobile Responsive -->
                 <div class="block lg:hidden">
-                     <figure><img src="./assets/navbar/hamburgerIcon.png" alt="Little Programmers Hamburger Menu Icon" class="w-[50px] lg:w-[30px] hamburgerIcon" id="hamburger"/></figure>
-                     <figure><img src="./assets/navbar/crossMark.png" alt="Little Programmers Cross Mark Icon" class="w-[50px] lg:w-[30px]" id="crossMark"/></figure>
-                        <div class="navItemContainer mt-[20px]" id="navItems">
-                            <div>
-                                <ul class="text-[22px]">
-                                    <li>Availability</li>
-                                    <li>Integration</li>
-                                    <li>Community</li>
-                                </ul>
-                            </div>
-                            <div class="">
-                                <div class="flex mt-[10px] gap-[10px]">
-                                    <figure>
-                                        <img src="./assets/navbar/notify.png"  alt="Little Programmers Navbar Bell Icon" class="bellIcon"/>
-                                    </figure>
-                                    <figure>
-                                        <img src="./assets/navbar/profile.png"  alt="Little Programmers Profile Icon"/>
-                                    </figure>
-                                </div>
+                    <figure>
+                        <img src="./assets/navbar/hamburgerIcon.png" alt="Little Programmers Hamburger Menu Icon"
+                            class="w-[50px] lg:w-[30px] hamburgerIcon" id="hamburger" />
+                    </figure>
+                    <figure>
+                        <img src="./assets/navbar/crossMark.png" alt="Little Programmers Cross Mark Icon"
+                            class="w-[50px] lg:w-[30px]" id="crossMark" />
+                    </figure>
+                    <div class="navItemContainer mt-[20px]" id="navItems">
+                        <div>
+                            <ul class="text-[22px]">
+                                <li>Availability</li>
+                                <li>Integration</li>
+                                <li>Community</li>
+                            </ul>
+                        </div>
+                        <div class="">
+                            <div class="flex mt-[10px] gap-[10px]">
+                                <figure>
+                                    <img src="./assets/navbar/notify.png" alt="Little Programmers Navbar Bell Icon"
+                                        class="bellIcon" />
+                                </figure>
+                                <figure>
+                                    <img src="./assets/navbar/profile.png" alt="Little Programmers Profile Icon" />
+                                </figure>
                             </div>
                         </div>
-                    
+                    </div>
                 </div>
-           </div>
-       </div>
-   </nav>
-   <!-- NavBar Ends -->
+            </div>
+        </div>
+    </nav>
+    <!-- NavBar Ends -->
 
-   <!-- Hero Section Starts -->
-   <section class="container mx-auto">
+    <!-- Hero Section Starts -->
+    <section class="container mx-auto">
         <div class="mt-[90px] flex flex-col lg:flex-row items-start lg:items-center justify-between">
             <div>
-                <h1 class="text-[32px] font-[700] leading-[37.5px] teamCreationHead">Team Creation management system</h1>
-                <p class="mt-[8px] text-[24px] font-[600] text-[#202020] text-opacity-60  cardContent">Existing Team</p>
+                <h1 class="text-[32px] font-[700] leading-[37.5px] teamCreationHead">
+                    Team Creation management system
+                </h1>
+                <p class="mt-[8px] text-[24px] font-[600] text-[#202020] text-opacity-60 cardContent">
+                    Existing Team
+                </p>
             </div>
             <div class="mt-[10px] lg:mt-[0px]">
                 <button class="createTeamBtn" id="createTeam">+ Create a team</button>
-                <button class="createTeamBtn hidden" id="createGroup">+ Create a Group</button>
+                <button class="createTeamBtn hidden" id="createGroup">
+                    + Create a Group
+                </button>
             </div>
         </div>
         <!-- Hero Content Section Start -->
@@ -81,53 +98,78 @@
             <!-- Card One -->
             <div class="cardContainer lg:w-[315px] lg:h-[385px]">
                 <figure>
-                    <img src="./assets/heroSection/softPro.png" alt="Little Programmers Card Image One"/>
+                    <img src="./assets/heroSection/softPro.png" alt="Little Programmers Card Image One" />
                     <div class="mt-[15px]">
-                        <h2 class="text-[32px] text-[#202020] font-[300] leading-[37.5px]"><span class="font-[900]">Soft</span>Pro</h2>
-                        <p class="text-[24px] font-[500] leading-[28.13px] mt-[8px]">Innovation tech partner</p>
-                        <p class="text-[16px] lg:w-[251px] text-[#000000] font-[400] leading-[24px] mt-[30px]">Grow Your Team with Ease: Effortlessly Add Members for Increased Performance and Achievement</p>
+                        <h2 class="text-[32px] text-[#202020] font-[300] leading-[37.5px]">
+                            <span class="font-[900]">Soft</span>Pro
+                        </h2>
+                        <p class="text-[24px] font-[500] leading-[28.13px] mt-[8px]">
+                            Innovation tech partner
+                        </p>
+                        <p class="text-[16px] lg:w-[251px] text-[#000000] font-[400] leading-[24px] mt-[30px]">
+                            Grow Your Team with Ease: Effortlessly Add Members for Increased
+                            Performance and Achievement
+                        </p>
                     </div>
                 </figure>
             </div>
             <!-- Card Two -->
             <div class="cardContainer lg:w-[315px] lg:h-[385px]">
                 <figure>
-                    <img src="./assets/heroSection/SechZoft.png" alt="Little Programmers Card Image One"/>
+                    <img src="./assets/heroSection/SechZoft.png" alt="Little Programmers Card Image One" />
                     <div class="mt-[15px]">
-                        <h2 class="text-[32px] text-[#202020] font-[700] leading-[37.5px]"><span class="font-[900]">SechZ</span>oft</h2>
-                        <p class="text-[24px] font-[400] leading-[28.13px] mt-[8px]"><span class="font-[500]">IT</span> solution expert</p>
-                        <p class="text-[16px] lg:w-[251px] text-[#000000] font-[400] leading-[24px] mt-[30px]">Grow Your Team with Ease: Effortlessly Add Members for Increased Performance and Achievement</p>
+                        <h2 class="text-[32px] text-[#202020] font-[700] leading-[37.5px]">
+                            <span class="font-[900]">SechZ</span>oft
+                        </h2>
+                        <p class="text-[24px] font-[400] leading-[28.13px] mt-[8px]">
+                            <span class="font-[500]">IT</span> solution expert
+                        </p>
+                        <p class="text-[16px] lg:w-[251px] text-[#000000] font-[400] leading-[24px] mt-[30px]">
+                            Grow Your Team with Ease: Effortlessly Add Members for Increased
+                            Performance and Achievement
+                        </p>
                     </div>
                 </figure>
             </div>
             <!-- Card Three -->
             <div class="cardContainer lg:w-[315px] lg:h-[385px]">
                 <figure>
-                    <img src="./assets/heroSection/Nextgen.png" alt="Little Programmers Card Image One"/>
+                    <img src="./assets/heroSection/Nextgen.png" alt="Little Programmers Card Image One" />
                     <div class="mt-[15px]">
-                        <h2 class="text-[32px] text-[#202020] font-[700] leading-[37.5px]">Nextgen</h2>
-                        <p class="text-[24px] font-[500] leading-[28.13px] mt-[8px]">Digital generation</p>
-                        <p class="text-[16px] lg:w-[251px] text-[#000000] font-[400] leading-[24px] mt-[30px]">Grow Your Team with Ease: Effortlessly Add Members for Increased Performance and Achievement</p>
+                        <h2 class="text-[32px] text-[#202020] font-[700] leading-[37.5px]">
+                            Nextgen
+                        </h2>
+                        <p class="text-[24px] font-[500] leading-[28.13px] mt-[8px]">
+                            Digital generation
+                        </p>
+                        <p class="text-[16px] lg:w-[251px] text-[#000000] font-[400] leading-[24px] mt-[30px]">
+                            Grow Your Team with Ease: Effortlessly Add Members for Increased
+                            Performance and Achievement
+                        </p>
                     </div>
                 </figure>
             </div>
         </div>
         <!-- Hero Content Section Ends -->
     </section>
-   <!-- Hero Section Ends -->
+    <!-- Hero Section Ends -->
 
     <!-- Create A New Team Modal Starts-->
     <section class="container mx-auto">
         <div class="modalContainer lg:w-[571px] lg:h-[369px] hidden">
-            <h4 class="font-[700] text-[24px] leading-[28.13px]">Create a new team</h4>
-            <p class="text-[#AEB7B4] font-[700] text-[20px] leading-[23.44px] mt-[50px]">Team name</p>
-           <div class="mt-[15px]">
-            <input type="text" class="inputSection block w-full lg:w-[491px]" placeholder="Agile3"/>
-           </div>
-           <div class="flex items-center justify-between mt-[38px]">
-              <button class="cancelBtn"  id="cancelBtn">Cancel</button>
-              <button class="continueBtn"  id="continueBtn">Continue</button>
-           </div>
+            <h4 class="font-[700] text-[24px] leading-[28.13px]">
+                Create a new team
+            </h4>
+            <p class="text-[#AEB7B4] font-[700] text-[20px] leading-[23.44px] mt-[50px]">
+                Team name
+            </p>
+            <div class="mt-[15px]">
+                <input type="text" class="inputSection block w-full lg:w-[491px]" placeholder="Agile3" />
+            </div>
+            <div class="flex items-center justify-between mt-[38px]">
+                <button class="cancelBtn" id="cancelBtn">Cancel</button>
+                <button class="continueBtn" id="continueBtn">Continue</button>
+            </div>
         </div>
     </section>
     <!-- Create A New Team Modal Ends -->
@@ -136,45 +178,136 @@
     <section class="container mx-auto">
         <div class="categoryContainer lg:w-[571px] lg:h-[369px] hidden">
             <h4 class="font-[700] text-[24px] leading-[28.13px]">Team Category</h4>
-            <p class="text-[#AEB7B4] font-[700] text-[20px] leading-[23.44px] mt-[50px]">Team name</p>
-           <div class="mt-[15px]">
-            <input type="text" class="inputSection block w-full lg:w-[491px]" placeholder="App engineering"/>
-           </div>
-           <div class="flex items-center justify-between mt-[38px]">
-              <button class="cancelBtn" id="teamCancelBtn">Cancel</button>
-              <button class="continueBtn" id="teamContinueBtn">Continue</button>
-           </div>
+            <p class="text-[#AEB7B4] font-[700] text-[20px] leading-[23.44px] mt-[50px]">
+                Team name
+            </p>
+            <div class="mt-[15px]">
+                <input type="text" class="inputSection block w-full lg:w-[491px]" placeholder="App engineering" />
+            </div>
+            <div class="flex items-center justify-between mt-[38px]">
+                <button class="cancelBtn" id="teamCancelBtn">Cancel</button>
+                <button class="continueBtn" id="teamContinueBtn">Continue</button>
+            </div>
         </div>
     </section>
     <!-- Create Team Category Ends -->
-    
+
     <!-- Team (Agile3) Interface Starts-->
     <section class="bg-[#FFF9F9] -mt-[100px] p-16 teamAgile hidden">
-       <div class="container mx-auto">
+        <div class="container mx-auto">
             <div class="">
-               <div class="flex items-center justify-between">
+                <div class="flex items-center justify-between">
                     <div>
-                        <h6 class="font-[700] text-[32px] leading-[37.5px] text-[#000000]">Team (Agile3)</h6>
+                        <h6 class="font-[700] text-[32px] leading-[37.5px] text-[#000000] teamAgialHead">
+                            Team (Agile3)
+                        </h6>
                     </div>
-                    <div class="flex gap-[10px]">
+                    <div class="flex gap-[10px] btnContainer">
                         <button class="assignMemberBtn">Assign a group</button>
-                        <button class="addMemberBtn">Add Members</button>
+                        <button class="addMemberBtn" id="addMembersBtn">
+                            Add Members
+                        </button>
                     </div>
-               </div>
-                <div class="mt-[20px] flex gap-[10px]">
+                </div>
+                <div class="mt-[20px] flex gap-[10px] teamAgailBtn">
                     <button class="activeMemberBtn">Active members (07)</button>
                     <button class="pendingMemberBtn">Pending (04)</button>
                 </div>
             </div>
         </div>
-        <div class="mt-[60px]">
+        <div class="mt-[60px] agialImg">
             <figure>
-                <img src="./assets/teamCreation/dashboard.png" alt="Little Programmers Team Creation DashBoard" class=" block mx-auto lg:w-[1237px]"/>
+                <img src="./assets/teamCreation/dashboard.png" alt="Little Programmers Team Creation DashBoard"
+                    class="block mx-auto lg:w-[1237px]" />
             </figure>
         </div>
     </section>
     <!-- Team (Agile3) Interface Ends-->
-  
-   <script src="./index.js"></script>
+
+    <!-- Team Description Starts -->
+    <section class="container mx-auto teamDescription hidden -mt-[100px]">
+        <div>
+            <p class="font-[700]">Team</p>
+            <h3 class="font-[700] text-[32px] leading-[37.5px] text-[#000000] mt-[10px]">
+                Little Programmers
+            </h3>
+            <div class="flex gap-[10px] mt-[30px]">
+                <button class="assignMemberBtn">Active (15)</button>
+                <button class="pendingBtn" id="addMembersBtn">Pending (01)</button>
+            </div>
+        </div>
+        <div class="-ml-[50px]">
+            <figure>
+                <img src="./assets/teamDescription/groupImage.png" alt="Little Programmers Group Image" />
+            </figure>
+        </div>
+        <div class="tableContainer">
+            <table>
+
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Designation</th>
+                        <th>User Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="tableColumn">
+                        <td data-label="Name" class="flex items-center">
+                            <img class="personImage hidden lg:block" src="./assets/teamDescription/singlepOne.png"
+                                alt="Little Programmers Person Image One">
+                            <p class="text-[20px] font-[500]">Hossain <br /><span class="link font-[200]">You</span></p>
+                        </td>
+                        <td data-label="Email">my@example.com</td>
+                        <td data-label="Designation">Developer</td>
+                        <td data-label="User Status">Active</td>
+                    </tr>
+                    <tr>
+                        <td data-label="Name" class="flex items-center">
+                            <img class="personImage hidden lg:block" src="./assets/teamDescription/singlepTwo.png"
+                                alt="Little Programmers Person Image One">
+                            <p class="text-[20px] font-[500]">Rakib <br /><span class="link font-[200]">View
+                                    Profile</span></p>
+                        </td>
+                        <td data-label="Email">rakib@lp.com</td>
+                        <td data-label="Designation">Web Engineer</td>
+                        <td data-label="User Status">Pending</td>
+                    </tr>
+                    <tr class="tableColumn">
+                        <td data-label="Name" class="flex items-center">
+                            <img class="personImage hidden lg:block" src="./assets/teamDescription/singlepThree.png"
+                                alt="Little Programmers Person Image One">
+                            <p class="text-[20px] font-[500]">Hasan <br /><span class="link font-[200]">View
+                                    Profile</span></p>
+                        </td>
+                        <td data-label="Email">hasan@lp.com</td>
+                        <td data-label="Designation">Product Designer</td>
+                        <td data-label="User Status">Rejected <button class="resendBtn ml-[10px]">Resend</button></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+
+    </section>
+    <section class="container mx-auto addMemberModal hidden">
+        <div class="addMemberContainer lg:w-[571px] block mx-auto">
+            <h1 class="text-[24px] font-[700] leading-[28.13px]">Assign new member</h1>
+            <h2 class="text-[20px] font-[700] text-[#AEB7B4] leading-[23.44px] mt-[50px] mb-[25px]">Group member can</h2>
+            <p class="text-[16px] font-[400] leading-[24px]">1. Identify skills needed.</p>
+            <p class="text-[16px] font-[400] leading-[24px]">2.Define clear roles.</p>
+            <p class="text-[16px] font-[400] leading-[24px]">3. Assign a leader.</p>
+            <p class="text-[16px] font-[400] leading-[24px]">4. Set clear goals.</p>
+            <div class="flex gap-[10px] mt-[30px]">
+                <button class="cancelBtn" id="cancelTeamBtn">Cancel</button>
+                <button class="continueBtn">Continue</button>
+            </div>
+        </div>
+    </section>
+    <!-- Team Description Ends -->
+
+    <script src="./index.js"></script>
 </body>
+
 </html>

@@ -99,3 +99,31 @@ teamContinueBtn.addEventListener('click', function(){
     navContainer.style.opacity = '1';
     
 })
+
+// Create Team Dashboard
+const addMembersBtn = document.getElementById("addMembersBtn")
+const teamAgialHead = document.querySelector(".teamAgialHead")
+const teamAgailBtn = document.querySelector(".teamAgailBtn")
+const agialImage = document.querySelector(".agialImg")
+const teamDescription = document.querySelector(".teamDescription")
+const tableContainer = document.querySelector(".tableContainer")
+const btnContainer = document.querySelector(".btnContainer")
+const addMemberModal = document.querySelector(".addMemberModal")
+
+const teamDescriptionOpacity = function(){
+    tableContainer.style.opacity = "0.6"
+   teamDescription.style.opacity = "0.3"
+   navContainer.style.opacity = '0.3';
+   btnContainer.style.opacity = '0.3';
+}
+
+addMembersBtn.addEventListener('click', function(){
+   teamAgialHead.classList.add("hidden")
+   teamAgailBtn.classList.add("hidden")
+   agialImage.classList.add("hidden")
+   teamDescription.classList.remove("hidden")
+   addMemberModal.classList.remove("hidden")
+   teamAgial.style.backgroundColor = "#FFF"
+   teamDescriptionOpacity()
+})
+

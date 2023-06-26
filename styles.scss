@@ -195,3 +195,131 @@ $border-color : #0A6AF6;
   color: #FFFFFF;
   line-height: 23.44px;
 }
+.pendingBtn{
+  width: 174px;
+  height: 71px;
+  border-radius: 16px;
+  border:2px solid #A5ECD7;
+  padding: 24px;
+  font-weight: 500;
+  size: 20px;
+  color: #A5ECD7;
+  line-height: 23.44px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 8px;
+  text-align: left;
+  // border-bottom: 1px solid #ddd;
+}
+.tableColumn{
+  background-color: #eae8e8;
+  padding: 15px;
+  border: 2px solid #eae8e8;
+  border-radius: 12px;
+}
+.personImage {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+.link{
+  border-bottom: 1px solid #000;
+  width: 30px;
+}
+.resendBtn{
+  border-radius: 8px;
+  padding: 10px;
+  background-color: $border-color;
+  color: white;
+  font-weight: 500;
+  size: 20px;
+  line-height: 23.44px;
+}
+
+.teamDescription {
+  position: relative;
+  // z-index: -1;
+}
+
+.addMemberModal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  
+}
+
+.addMemberContainer{
+  height: 394px;
+  border: 1px solid #9ED2C3;
+  border-radius: 20px;
+  padding: 40px;
+  background-color: white;
+  box-shadow: 0 0 15px 10px rgba(10, 106, 246, 0.2);
+}
+
+.cancelBtn{
+  width: 220px;
+  height: 55px;
+  Padding: 16px 79px 16px 79px;
+  border: 2px solid #000;
+  border-radius: 34px;
+  font-size: 20;
+  font-weight: 700;
+  line-height: 23.44px;
+}
+.continueBtn{
+  width: 215px;
+  height: 55px;
+  Padding: 16px 67px 16px 67px;
+  background-color: $border-color;
+  border-radius: 34px;
+  font-size: 20;
+  font-weight: 700;
+  line-height: 23.44px;
+  color: white
+}
+
+/* CSS for responsive design */
+@media only screen and (max-width: 1024px) {
+  table {
+      border: 0;
+  }
+
+  table caption {
+      font-size: 1.3em;
+  }
+  
+  table thead {
+      display: none;
+  }
+  
+  table tr:nth-child(even) {
+      background-color: #f2f2f2;
+  }
+  
+  table td {
+      display: block;
+      border: none;
+      position: relative;
+      padding-left: 50%;
+      text-align: left;
+  }
+  
+  table td::before {
+      content: attr(data-label);
+      position: absolute;
+      left: 0;
+      width: 50%;
+      padding-left: 15px;
+      font-weight: bold;
+  }
+}
