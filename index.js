@@ -83,9 +83,19 @@ cancelBtn.addEventListener("click", showCard);
 
 const categoryContainer = document.querySelector(".categoryContainer")
 const teamCancelBtn = document.getElementById("teamCancelBtn")
+const teamContinueBtn = document.getElementById("teamContinueBtn")
+const teamAgial = document.querySelector(".teamAgile")
 
 teamCancelBtn.addEventListener('click', function(){
     categoryContainer.classList.add("hidden")
     modalContainer.classList.remove("hidden")
 })
 
+teamContinueBtn.addEventListener('click', function(){
+    teamAgial.classList.remove("hidden")
+    categoryContainer.classList.add("hidden")
+    createGroup.style.display = "none"
+    teamCreationHead.style.display = "none"
+    navContainer.style.opacity = '1';
+    
+})

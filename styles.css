@@ -138,4 +138,28 @@ body {
   color: #fff;
 }
 
+.activeMemberBtn {
+  height: 60px;
+  border: 2px solid rgba(76, 84, 248, 0.3);
+  border-radius: 12px;
+  padding: 16px 24px 16px 24px;
+  background-color: #FFFFFF;
+  color: rgba(76, 84, 248, 0.3);
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28.13px;
+}
+
+.pendingMemberBtn {
+  height: 60px;
+  border: 2px solid rgba(76, 84, 248, 0.3);
+  border-radius: 12px;
+  padding: 16px 24px 16px 24px;
+  background-color: #FFFFFF;
+  color: rgba(76, 84, 248, 0.3);
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 28.13px;
+}
+
 /*# sourceMappingURL=styles.css.map */
