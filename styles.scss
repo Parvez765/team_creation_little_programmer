@@ -172,6 +172,26 @@ $border-color : #0A6AF6;
   font-size: 24px;
   line-height: 28.13px;
 }
+.assignMemberBtn{
+  width: 183px;
+  height: 71px;
+  border-radius: 16px;
+  border: 2px solid $border-color;
+  padding: 24px;
+  font-weight: 500;
+  size: 20px;
+  color: $border-color;
+  line-height: 23.44px;
+}
 
-
-
+.addMemberBtn{
+  width: 174px;
+  height: 71px;
+  border-radius: 16px;
+  background-color: $border-color;
+  padding: 24px;
+  font-weight: 500;
+  size: 20px;
+  color: #FFFFFF;
+  line-height: 23.44px;
+}
