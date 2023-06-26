@@ -68,11 +68,12 @@
    <section class="container mx-auto">
         <div class="mt-[90px] flex flex-col lg:flex-row items-start lg:items-center justify-between">
             <div>
-                <h1 class="text-[32px] font-[700] leading-[37.5px]">Team Creation management system</h1>
+                <h1 class="text-[32px] font-[700] leading-[37.5px] teamCreationHead">Team Creation management system</h1>
                 <p class="mt-[8px] text-[24px] font-[600] text-[#202020] text-opacity-60  cardContent">Existing Team</p>
             </div>
             <div class="mt-[10px] lg:mt-[0px]">
                 <button class="createTeamBtn" id="createTeam">+ Create a team</button>
+                <button class="createTeamBtn hidden" id="createGroup">+ Create a Group</button>
             </div>
         </div>
         <!-- Hero Content Section Start -->
@@ -112,8 +113,25 @@
             </div>
         </div>
         <!-- Hero Content Section Ends -->
+
+        <!-- Create A New Team Modal Starts-->
+        <section class="container mx-auto">
+            <div class="modalContainer lg:w-[571px] lg:h-[369px] hidden">
+                <h4 class="font-[700] text-[24px] leading-[28.13px]">Create a new team</h4>
+                <p class="text-[#AEB7B4] font-[700] text-[20px] leading-[23.44px] mt-[50px]">Team name</p>
+               <div class="mt-[15px]">
+                    <input type="text" class="inputSection" placeholder="Agile3"/>
+               </div>
+               <div class="flex items-center justify-between mt-[38px]">
+                  <button class="cancelBtn">Cancel</button>
+                  <button class="continueBtn">Continue</button>
+               </div>
+            </div>
+        </section>
+        <!-- Create A New Team Modal Ends -->
    </section>
    <!-- Hero Section Ends -->
+  
    <script src="./index.js"></script>
 </body>
 </html>

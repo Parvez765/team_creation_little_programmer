@@ -23,12 +23,29 @@ crossMark.addEventListener('click', function(){
 // Hero Section Functionality Starts Here
 const createTeam = document.getElementById("createTeam")
 const cardContent = document.querySelectorAll(".cardContent")
+const navContainer = document.querySelector(".navContainer")
+const teamCreationHead = document.querySelector(".teamCreationHead")
+const createGroup = document.getElementById("createGroup")
+
+// Modal Section's Content
+const modalContainer = document.querySelector(".modalContainer")
+
+const opacity = function(){
+    navContainer.style.opacity = '0.2';
+    teamCreationHead.style.opacity = '0.2';
+    createGroup.style.display = "block"
+    createTeam.style.display = "none"
+    createGroup.style.opacity = '0.2';
+}
+
 
 createTeam.addEventListener("click", function(){
    cardContent.forEach(function(card){
         card.classList.add("hidden")
-   })
-    
+    })
+   
+    opacity()
+    modalContainer.classList.remove("hidden")
    
 })
 
