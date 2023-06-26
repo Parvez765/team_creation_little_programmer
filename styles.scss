@@ -288,6 +288,51 @@ th, td {
   color: white
 }
 
+.teamMemberModal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  
+}
+
+.teamMemberContainer{
+  height: 477px;
+  border: 1px solid #9ED2C3;
+  border-radius: 20px;
+  padding: 40px;
+  background-color: white;
+  box-shadow: 0 0 15px 10px rgba(10, 106, 246, 0.2);
+}
+
+.memberInput{
+  border: 2px solid $border-color;
+  border-radius: 12px;
+  padding: 20px;
+}
+
+.cancelMemberCancelBtn{
+  width: 220px;
+  height: 55px;
+  Padding: 16px 79px 16px 79px;
+  border-radius: 34px;
+  border: 2px solid #000;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 23.44px;
+}
+.addMemberCancelBtn{
+  width: 250px;
+  height: 55px;
+  Padding: 16px 67px 16px 67px;
+  border-radius: 34px;
+  background-color: $border-color;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 23.44px;
+  color: #FFFFFF;
+}
+
 /* CSS for responsive design */
 @media only screen and (max-width: 1024px) {
   table {

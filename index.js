@@ -127,3 +127,34 @@ addMembersBtn.addEventListener('click', function(){
    teamDescriptionOpacity()
 })
 
+const continueTeamBtn = document.getElementById("continueTeamBtn")
+const addTeamMember = document.querySelector('.teamMemberModal')
+
+
+continueTeamBtn.addEventListener('click', () =>{
+    // console.log("Hi");
+    addTeamMember.classList.remove('hidden')
+    addMemberModal.classList.add('hidden')
+
+})
+
+const memberCancelBtn = document.getElementById("memberCancelBtn")
+const memberAddBtn = document.getElementById("memberAddBtn")
+const activeMemberList = document.querySelector(".activeMemberContainer")
+
+memberAddBtn.addEventListener("click",()=> {
+    console.log("Hi");
+    activeMemberList.classList.remove('hidden')
+    addTeamMember.classList.add('hidden')
+    teamDescription.classList.add('hidden')
+    btnContainer.classList.add('hidden')
+    
+
+})
+
+
+memberCancelBtn.addEventListener('click', () =>{
+    addTeamMember.classList.add('hidden')
+    addMemberModal.classList.remove('hidden')
+   
+})

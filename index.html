@@ -294,18 +294,55 @@
     <section class="container mx-auto addMemberModal hidden">
         <div class="addMemberContainer w-[571px] block mx-auto">
             <h1 class="text-[24px] font-[700] leading-[28.13px]">Assign new member</h1>
-            <h2 class="text-[20px] font-[700] text-[#AEB7B4] leading-[23.44px] mt-[50px] mb-[25px]">Group member can</h2>
+            <h2 class="text-[20px] font-[700] text-[#AEB7B4] leading-[23.44px] mt-[50px] mb-[25px]">Group member can
+            </h2>
             <p class="text-[16px] font-[400] leading-[24px]">1. Identify skills needed.</p>
             <p class="text-[16px] font-[400] leading-[24px]">2.Define clear roles.</p>
             <p class="text-[16px] font-[400] leading-[24px]">3. Assign a leader.</p>
             <p class="text-[16px] font-[400] leading-[24px]">4. Set clear goals.</p>
             <div class="flex gap-[10px] mt-[30px]">
                 <button class="cancelBtn" id="cancelTeamBtn">Cancel</button>
-                <button class="continueBtn">Continue</button>
+                <button class="continueBtn" id="continueTeamBtn">Continue</button>
             </div>
         </div>
     </section>
     <!-- Team Description Ends -->
+
+    <!-- Add New Member Card Starts -->
+    <section class="container mx-auto teamMemberModal hidden">
+        <div class="teamMemberContainer w-[594px] block mx-auto">
+            <h4 class="text-[24px] font-[700] leading-[28.13px]">Who do you want to add new members?</h4>
+            <p class="font-[400] font-[20px] leading-[23.44px] text-[#6C7172] mt-[20px]">Add new member to join group
+            </p>
+            <div class="mt-[20px]"><input type="text" class="memberInput lg:w-[514px] h-[75px]"
+                    placeholder="Type a name to assign group member" />
+            </div>
+            <div class="flex items-center gap-[20px] mt-[50px]">
+                <div>
+                    <figure>
+                        <img src="./assets/teamDescription/nameLogo.png" alt="Little Programmers Name Icon Logo"
+                            class="nameIcon" />
+                    </figure>
+                </div>
+                <div>
+                    <p class="font-[400] text-[20px] leading-[23.44px] mb-[10px]">Muhammad Julfikar Ali</p>
+                    <p class="font-[400] text-[20px] leading-[23.44px] text-[#6C7172]">ui.jali@gmail.com</p>
+                </div>
+            </div>
+            <div class="mt-[60px] flex gap-[10px]">
+                <button class="cancelMemberCancelBtn" id="memberCancelBtn">Cancel</button>
+                <button class="addMemberCancelBtn" id="memberAddBtn">Add member</button>
+            </div>
+    </section>
+    <!-- Add New Member Card Ends -->
+
+    <!-- Active Member List Start -->
+    <section class="container mx-auto activeMemberContainer hidden">
+        <div>
+            <h1>Hello</h1>
+        </div>
+    </section>
+    <!-- Active Member List Ends -->
 
     <script src="./index.js"></script>
 </body>
