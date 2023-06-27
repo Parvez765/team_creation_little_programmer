@@ -130,6 +130,12 @@ addMembersBtn.addEventListener('click', function(){
 const continueTeamBtn = document.getElementById("continueTeamBtn")
 const addTeamMember = document.querySelector('.teamMemberModal')
 
+const cancelTeamBtn = document.getElementById("cancelTeamBtn")
+
+cancelBtn.addEventListener("click", () =>{
+    console.log("Hi");
+})
+
 
 continueTeamBtn.addEventListener('click', () =>{
     // console.log("Hi");
@@ -148,6 +154,7 @@ memberAddBtn.addEventListener("click",()=> {
     addTeamMember.classList.add('hidden')
     teamDescription.classList.add('hidden')
     btnContainer.classList.add('hidden')
+    navContainer.style.opacity = "1"
     
 
 })
@@ -158,3 +165,25 @@ memberCancelBtn.addEventListener('click', () =>{
     addMemberModal.classList.remove('hidden')
    
 })
+
+const pendingBtn = document.getElementById("pendingBtn")
+const memberTable = document.getElementById("addMemberTable")
+const activeMember = document.querySelector(".activeMemberBtns")
+const pendingMember = document.querySelector(".pendingMemberBtns")
+const pendingMemberTable = document.querySelector(".pendingMember")
+const addGroupMemberBtn = document.getElementById("addGrpMemberBtn")
+
+pendingBtn.addEventListener("click", () => {
+  memberTable.classList.add("hidden");
+  activeMember.classList.remove("activeBtn");
+  pendingMember.classList.add("activeBtn");
+  pendingMemberTable.classList.remove("hidden")
+});
+
+addGroupMemberBtn.addEventListener("click", () => {
+    memberTable.classList.remove("hidden");
+    activeMember.classList.add("activeBtn");
+    pendingMember.classList.remove("activeBtn");
+    pendingMemberTable.classList.add("hidden")
+})
+

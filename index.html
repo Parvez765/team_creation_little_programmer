@@ -337,12 +337,340 @@
     <!-- Add New Member Card Ends -->
 
     <!-- Active Member List Start -->
-    <section class="container mx-auto activeMemberContainer hidden">
-        <div>
-            <h1>Hello</h1>
+    <section class="bg-[#FFF9F9] -mt-[130px] p-16 activeMemberContainer hidden">
+        <div class="container mx-auto">
+            <div class="">
+                <div class="flex items-center justify-between">
+                    <div>
+                        <h6 class="font-[700] text-[32px] leading-[37.5px] text-[#000000] teamAgialHead">
+                            Team (Agile3)
+                        </h6>
+                    </div>
+                    <div class="flex gap-[10px] btnContainer">
+                        <button class="assignMemberBtn">Assign a group</button>
+                        <button class="addMemberBtn" id="addMembersBtn">
+                            Add Members
+                        </button>
+                    </div>
+                </div>
+                <div class="mt-[20px] flex gap-[10px] teamAgailBtn">
+                    <button class="activeMemberBtns activeBtn" id="addGrpMemberBtn">Active members (07)</button>
+                    <button class="pendingMemberBtns" id="pendingBtn">Pending (04)</button>
+                </div>
+            </div>
+            <div>
+                <figure>
+                    <img src="./assets/teamDescription/groupImage.png" alt="Little Programmers Group Image"
+                        class="-ml-[50px]" />
+                </figure>
+            </div>
+            <!-- Table Section -->
+            <div class="tableContainer" id="addMemberTable">
+                <table>
+
+                    <thead>
+                        <tr class="text-[24px] font-[700]">
+                            <th>Name</th>
+                            <th>Title</th>
+                            <th>Status</th>
+                            <th>Role</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td data-label="Name" class="flex items-center">
+                                <img class="w-[80px] hidden lg:block"
+                                    src="./assets/teamDescription/dashboardOmgOne-01.png"
+                                    alt="Little Programmers Person Image One">
+                                <p class="text-[24px] font-[700] ml-[20px]">Muhammad <br /><span
+                                        class="userEmail mt-[8px] text-[16px] font-[400]">info@cleaverlearner.com</span>
+                                </p>
+                            </td>
+                            <td data-label="Email">my@example.com</td>
+                            <td data-label="Designation">Developer</td>
+                            <td data-label="User Status">Active</td>
+                            <td data-label="User Status">
+                                <figure>
+                                    <img src="./assets/teamDescription/downArrow.png" />
+                                </figure>
+                            </td>
+                            <td data-label="User Status">
+                                <figure>
+                                    <img src="./assets/teamDescription/Cross.png" />
+                                </figure>
+                            </td>
+                        </tr>
+                        <!-- Two -->
+                        <tr>
+                            <td data-label="Name" class="flex items-center">
+                                <img class="w-[80px] hidden lg:block"
+                                    src="./assets/teamDescription/dashboardOmgTwo-01.png"
+                                    alt="Little Programmers Person Image One">
+                                <p class="text-[24px] font-[700] ml-[20px]">Jubayer<br /><span
+                                        class="userEmail mt-[8px] text-[16px] font-[400]">info@jubayer.com</span>
+                                </p>
+                            </td>
+                            <td data-label="Email">Engineer</td>
+                            <td data-label="Designation">Active</td>
+                            <td data-label="User Status">Full Stack Developer</td>
+                            <td data-label="User Status">
+                                <figure>
+                                    <img src="./assets/teamDescription/downArrow.png" />
+                                </figure>
+                            </td>
+                            <td data-label="User Status">
+                                <figure>
+                                    <img src="./assets/teamDescription/Cross.png" />
+                                </figure>
+                            </td>
+                        </tr>
+                        <!-- Three -->
+                        <tr>
+                            <td data-label="Name" class="flex items-center">
+                                <img class="w-[80px] hidden lg:block"
+                                    src="./assets/teamDescription/dashboardOmgThree-01.png"
+                                    alt="Little Programmers Person Image One">
+                                <p class="text-[24px] font-[700] ml-[20px]">Ab.Rofique<br /><span
+                                        class="userEmail mt-[8px] text-[16px] font-[400]">info@arofiq.com</span>
+                                </p>
+                            </td>
+                            <td data-label="Email">Engineer</td>
+                            <td data-label="Designation">Active</td>
+                            <td data-label="User Status">Full Stack Developer</td>
+                            <td data-label="User Status">
+                                <figure>
+                                    <img src="./assets/teamDescription/downArrow.png" />
+                                </figure>
+                            </td>
+                            <td data-label="User Status">
+                                <figure>
+                                    <img src="./assets/teamDescription/Cross.png" />
+                                </figure>
+                            </td>
+                        </tr>
+                        <!-- Four -->
+                        <tr>
+                            <td data-label="Name" class="flex items-center">
+                                <img class="w-[80px] hidden lg:block"
+                                    src="./assets/teamDescription/dashboardOimgFour-01.png"
+                                    alt="Little Programmers Person Image One">
+                                <p class="text-[24px] font-[700] ml-[20px]">Hasan<br /><span
+                                        class="userEmail mt-[8px] text-[16px] font-[400]">info@hasan.com</span>
+                                </p>
+                            </td>
+                            <td data-label="Email">Developer</td>
+                            <td data-label="Designation">Active</td>
+                            <td data-label="User Status">Full Stack Developer</td>
+                            <td data-label="User Status">
+                                <figure>
+                                    <img src="./assets/teamDescription/downArrow.png" />
+                                </figure>
+                            </td>
+                            <td data-label="User Status">
+                                <figure>
+                                    <img src="./assets/teamDescription/Cross.png" />
+                                </figure>
+                            </td>
+                        </tr>
+                        <!-- Five -->
+                        <tr>
+                            <td data-label="Name" class="flex items-center">
+                                <img class="w-[80px] hidden lg:block"
+                                    src="./assets/teamDescription/dashboardOimgFive-01.png"
+                                    alt="Little Programmers Person Image One">
+                                <p class="text-[24px] font-[700] ml-[20px]">Muhammad Ullah<br /><span
+                                        class="userEmail mt-[8px] text-[16px] font-[400]">info@mullah.com</span>
+                                </p>
+                            </td>
+                            <td data-label="Email">Developer</td>
+                            <td data-label="Designation">Active</td>
+                            <td data-label="User Status">Full Stack Developer</td>
+                            <td data-label="User Status">
+                                <figure>
+                                    <img src="./assets/teamDescription/downArrow.png" />
+                                </figure>
+                            </td>
+                            <td data-label="User Status">
+                                <figure>
+                                    <img src="./assets/teamDescription/Cross.png" />
+                                </figure>
+                            </td>
+                        </tr>
+                        <!-- Six -->
+                        <tr>
+                            <td data-label="Name" class="flex items-center">
+                                <img class="w-[80px] hidden lg:block"
+                                    src="./assets/teamDescription/dashboardOimgFive-01.png"
+                                    alt="Little Programmers Person Image One">
+                                <p class="text-[24px] font-[700] ml-[20px]">Samir<br /><span
+                                        class="userEmail mt-[8px] text-[16px] font-[400]">info@samir.com</span>
+                                </p>
+                            </td>
+                            <td data-label="Email">Developer</td>
+                            <td data-label="Designation">Active</td>
+                            <td data-label="User Status">Full Stack Developer</td>
+                            <td data-label="User Status">
+                                <figure>
+                                    <img src="./assets/teamDescription/downArrow.png" />
+                                </figure>
+                            </td>
+                            <td data-label="User Status">
+                                <figure>
+                                    <img src="./assets/teamDescription/Cross.png" />
+                                </figure>
+                            </td>
+                        </tr>
+                        <!-- Seven -->
+                        <tr>
+                            <td data-label="Name" class="flex items-center">
+                                <img class="w-[80px] hidden lg:block"
+                                    src="./assets/teamDescription/dashboardOimgFive-01.png"
+                                    alt="Little Programmers Person Image One">
+                                <p class="text-[24px] font-[700] ml-[20px]">Robiul Alam<br /><span
+                                        class="userEmail mt-[8px] text-[16px] font-[400]">info@ralam.com</span>
+                                </p>
+                            </td>
+                            <td data-label="Email">Developer</td>
+                            <td data-label="Designation">Active</td>
+                            <td data-label="User Status">Full Stack Developer</td>
+                            <td data-label="User Status">
+                                <figure>
+                                    <img src="./assets/teamDescription/downArrow.png" />
+                                </figure>
+                            </td>
+                            <td data-label="User Status">
+                                <figure>
+                                    <img src="./assets/teamDescription/Cross.png" />
+                                </figure>
+                            </td>
+                        </tr>
+                    </tbody>
+
+                </table>
+            </div>
         </div>
     </section>
     <!-- Active Member List Ends -->
+
+    <!-- Pending Member -->
+   <section class="bg-[#FFF9F9]">
+    <div class="container mx-auto hidden pendingMember">
+        <div class="tableContainer" id="addMemberTable">
+            <table>
+    
+                <thead>
+                    <tr class="text-[24px] font-[700]">
+                        <th>Name</th>
+                        <th>Title</th>
+                        <th>Status</th>
+                        <th>Role</th>
+                    </tr>
+                </thead>
+    
+                <tbody>
+                    <tr>
+                        <td data-label="Name" class="flex items-center">
+                            <img class="w-[80px] hidden lg:block"
+                                src="./assets/teamDescription/dashboardOmgOne-01.png"
+                                alt="Little Programmers Person Image One">
+                            <p class="text-[24px] font-[700] ml-[20px]">Tahsin <br /><span
+                                    class="userEmail mt-[8px] text-[16px] font-[400]">info@cleaverlearner.com</span>
+                            </p>
+                        </td>
+                        <td data-label="Email">Team Lead</td>
+                        <td data-label="Designation">Pending</td>
+                        <td data-label="User Status">Engineer</td>
+                        <td data-label="User Status">
+                            <figure>
+                                <img src="./assets/teamDescription/downArrow.png" />
+                            </figure>
+                        </td>
+                        <td data-label="User Status">
+                            <figure>
+                                <img src="./assets/teamDescription/Cross.png" />
+                            </figure>
+                        </td>
+                    </tr>
+                  <!-- Two -->
+                    <tr>
+                        <td data-label="Name" class="flex items-center">
+                            <img class="w-[80px] hidden lg:block"
+                                src="./assets/teamDescription/dashboardOmgTwo-01.png"
+                                alt="Little Programmers Person Image One">
+                            <p class="text-[24px] font-[700] ml-[20px]">Aman Uddin<br /><span
+                                    class="userEmail mt-[8px] text-[16px] font-[400]">info@jubayer.com</span>
+                            </p>
+                        </td>
+                        <td data-label="Email">Engineer</td>
+                        <td data-label="Designation">Pending</td>
+                        <td data-label="User Status">Full Stack Developer</td>
+                        <td data-label="User Status">
+                            <figure>
+                                <img src="./assets/teamDescription/downArrow.png" />
+                            </figure>
+                        </td>
+                        <td data-label="User Status">
+                            <figure>
+                                <img src="./assets/teamDescription/Cross.png" />
+                            </figure>
+                        </td>
+                    </tr>
+                  <!-- Three -->
+                  <tr>
+                    <td data-label="Name" class="flex items-center">
+                        <img class="w-[80px] hidden lg:block"
+                            src="./assets/teamDescription/dashboardOmgThree-01.png"
+                            alt="Little Programmers Person Image One">
+                        <p class="text-[24px] font-[700] ml-[20px]">Zakaria<br /><span
+                                class="userEmail mt-[8px] text-[16px] font-[400]">info@arofiq.com</span>
+                        </p>
+                    </td>
+                    <td data-label="Email">Engineer</td>
+                    <td data-label="Designation">Active</td>
+                    <td data-label="User Status">Full Stack Developer</td>
+                    <td data-label="User Status">
+                        <figure>
+                            <img src="./assets/teamDescription/downArrow.png" />
+                        </figure>
+                    </td>
+                    <td data-label="User Status">
+                        <figure>
+                            <img src="./assets/teamDescription/Cross.png" />
+                        </figure>
+                    </td>
+                </tr>
+                <!-- Four -->
+                <tr>
+                    <td data-label="Name" class="flex items-center">
+                        <img class="w-[80px] hidden lg:block"
+                            src="./assets/teamDescription/dashboardOimgFour-01.png"
+                            alt="Little Programmers Person Image One">
+                        <p class="text-[24px] font-[700] ml-[20px]">Musleh<br /><span
+                                class="userEmail mt-[8px] text-[16px] font-[400]">info@hasan.com</span>
+                        </p>
+                    </td>
+                    <td data-label="Email">Developer</td>
+                    <td data-label="Designation">Active</td>
+                    <td data-label="User Status">Full Stack Developer</td>
+                    <td data-label="User Status">
+                        <figure>
+                            <img src="./assets/teamDescription/downArrow.png" />
+                        </figure>
+                    </td>
+                    <td data-label="User Status">
+                        <figure>
+                            <img src="./assets/teamDescription/Cross.png" />
+                        </figure>
+                    </td>
+                </tr>
+             
+                </tbody>
+    
+            </table>
+        </div>
+    </div>
+   </section>
 
     <script src="./index.js"></script>
 </body>
